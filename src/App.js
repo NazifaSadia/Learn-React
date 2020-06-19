@@ -11,9 +11,27 @@ import Refresh from './myComponents/Refresh';
 import Render_Hydrate from './myComponents/Render_Hydrate';
 import FindDOMNode from './myComponents/FindDOMNode';
 import Form from './myComponents/Form';
-
+import Form2 from './myComponents/Form2';
+import SignUp from './myComponents/SignUp';
+import Text from './myComponents/Text';
+import Select from './myComponents/Select';
+import List from './myComponents/List';
+import JsonList from './myComponents/JsonList';
+import styles from './Mycss.module.css';
+import './My.scss';
+import CountryList from './CountryList';
+import Post from './Post';
+import MyTable from './myComponents/MyTable';
+import Navigation from './myComponents/Navigation';
 
 function App() {
+  const myStyle = {
+    color :"Blue",
+    backgroundColor : "LightBlue",
+    padding : "10px",
+    fontFamily : "Arial"
+  };
+
   return (
     <div className="App">
       {/* <Hello name="Nazifa" age="25"></Hello> */}
@@ -31,8 +49,22 @@ function App() {
       {/* <Refresh></Refresh> */}
       {/* <Render_Hydrate></Render_Hydrate> */}
       {/* <FindDOMNode></FindDOMNode> */}
-      <Form></Form>
-    
+      {/* <Form></Form> */}
+      {/* <Form2></Form2> */}
+      {/* <SignUp></SignUp> */}
+      {/* <Text></Text> */}
+      {/* <Select></Select> */}
+      {/* <List></List> */}
+      {/* <JsonList></JsonList> */}
+      {/* <h1 style={myStyle}>Hello Nahian</h1> */}
+
+      {/* <h1 className={styles.textStyle}>Hello Nahian</h1>
+
+      <h1 className="TextStyle2">SASS</h1> */}
+      {/* <CountryList></CountryList> */}
+      {/* <Post></Post> */}
+      {/* <MyTable></MyTable> */}
+      <Navigation></Navigation>
     </div>
   );
 }

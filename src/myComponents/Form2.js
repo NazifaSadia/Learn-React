@@ -13,13 +13,16 @@ class Form2 extends Component {
        var myValue = event.target.value;
        this.setState({[myName]:myValue});
     }
+    onSubmitHandler = (event)=> {
+        alert(this.state.username);
+    }
 
     render() {
         return (
             <div>
-                <form action="">
-                    <p>My First Form: </p>
-                     <p>{this.state.username}</p>
+                <form onSubmit={this.onSubmitHandler} action="">
+                    <p>My Name is: </p>
+                    <p>{this.state.username}</p>
                     <input name="username" onChange={this.onChangeHandler} type="text" placeholder="Your Name" /><br/><br/>
                     <input type="submit" value="Submit Now" />
                 </form>

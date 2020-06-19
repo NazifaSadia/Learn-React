@@ -1,0 +1,9 @@
+$nameColor : red;
+$backgroundColor : green;
+$myPadding : 50px;
+
+.TextStyle2 {
+    color: $nameColor;
+    background-color: $backgroundColor;
+    padding: $myPadding;
+}
